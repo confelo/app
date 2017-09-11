@@ -1,0 +1,56 @@
+.App {
+  width: 100%;
+  background-color: #fff;
+}
+
+.App-header-wrapper {
+  background-color: #fff;
+  border-bottom: 1px solid #F0F0F0;
+  /* -webkit-box-shadow: 0 1px 5px rgba(107, 107, 107, 0.1);
+  box-shadow: 0 1px 5px rgba(107, 107, 107, 0.1);   */
+  height: 70px;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.App-header {
+  color: #000;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.App-logo {
+  color: #000;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.App-search {
+  display: inline-block;
+  float: right;
+  margin-top: 12px;
+}
+
+.home-intro {
+  padding: 50px 0 0 0;
+}
+
+.home-intro h1 {
+  color: #000;
+  font-size: 3em;
+  font-weight: 200;
+}
+
+.home-intro-search {
+  border: 1px solid #eee;
+  height: 75px;
+  margin-left: 1rem;
+  width: 80%;
+}
+
+.events-wrapper {
+  background: #FFFFFF;
+  margin-top: 50px;
+}
