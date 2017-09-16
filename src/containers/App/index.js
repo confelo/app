@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {Grid} from 'semantic-ui-react';
+import {Button, Grid} from 'semantic-ui-react';
 
+import Search from '../../components/Search';
 import EventList from '../../components/EventList';
 import EventDetail from '../../components/EventDetail';
 import './App.css';
@@ -31,7 +32,9 @@ let someEvents = [
   }
 ];
 
-someEvents = someEvents.concat(someEvents);
+someEvents = someEvents
+  .concat(someEvents)
+  .concat(someEvents);
 
 class App extends Component {
   constructor() {
@@ -86,11 +89,18 @@ class App extends Component {
         <div className="home-intro">
           <Grid container stackable columns={1}>
             <h1>Find all the best events in tech</h1>
-            <div className="home-intro-search"></div>
+            <div className="home-search-wrapper">
+              <Search isFluid={true} size="huge" placeholder="search by name, location, topic, speaker..."/>
+            </div>
           </Grid>
         </div>
         <div className="events-wrapper">
           <EventList events={someEvents} onEventClicked={this.handleEventClick}/> {this.renderEventDetail()}
+        </div>
+        <div className="view-more">
+          <div className="-action">
+            <Button fluid>View all 195 events</Button>
+          </div>
         </div>
       </div>
     );
