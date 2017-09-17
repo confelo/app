@@ -2,7 +2,7 @@ import React from 'react';
 
 const EventMap = () => {
     return (
-        <div>
+        <div className="EventMap">
             MAPA
         </div>
     );

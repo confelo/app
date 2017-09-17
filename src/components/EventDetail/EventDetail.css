@@ -29,7 +29,31 @@
 }
 
 .EventDetail .EventGeneralInfo h1 {
-    padding: 10px;
     font-size: 4em;
+    font-weight: 300;
     line-height: 1em;    
+    padding: 10px;
+}
+
+.EventDetail .EventGeneralInfo .-details, .EventDetail .EventGeneralInfo .EventMap {
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    margin: 10px;
+    padding: 10px;
+}
+
+.EventDetail .EventGeneralInfo .EventMap {
+    height: 300px;
+}
+
+.EventDetail .EventDescription .-description h2 {
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.EventDetail .EventDescription .-description p {
+    font-size: 16px;
+    font-weight: 400;
+    width: 75%;
 }
