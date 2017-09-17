@@ -19,6 +19,7 @@
 
 .EventCard.ui.card>.content>.header {
     font-size: 2.6em;
+    font-weight: 300;
     height: 185px;
     line-height: 1.1em;
     margin-bottom: 15px;
@@ -38,4 +39,14 @@
     margin-right: 2px;
     padding: 4px 7px;
     text-transform: uppercase;
+}
+
+@media only screen and (max-width: 767px) {
+    .EventCard.ui.card {
+        height: 220px;
+    }
+
+    .EventCard.ui.card>.content>.header {
+        height: 110px;
+    }
 }

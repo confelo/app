@@ -81,16 +81,22 @@ class App extends Component {
           <Grid container stackable columns={1}>
             <Grid.Column>
               <div className="App-header">
-                <div className="App-logo">confello</div>
+                <div className="App-logo">confelo</div>
+                <div className="-action">
+                  <span>Add event</span>
+                </div>
               </div>
             </Grid.Column>
           </Grid>
         </div>
         <div className="home-intro">
           <Grid container stackable columns={1}>
-            <h1>Find all the best events in tech</h1>
+            <h1>Find the best events in tech</h1>
             <div className="home-search-wrapper">
-              <Search isFluid={true} size="huge" placeholder="search by name, location, topic, speaker..."/>
+              <Search
+                isFluid={true}
+                size="huge"
+                placeholder="search by name, location, topic, speaker..."/>
             </div>
           </Grid>
         </div>
@@ -102,6 +108,8 @@ class App extends Component {
             <Button fluid>View all 195 events</Button>
           </div>
         </div>
+
+        <footer>Stay informed</footer>
       </div>
     );
   }
