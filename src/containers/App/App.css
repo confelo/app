@@ -57,13 +57,10 @@
   color: #545454;
   font-size: 2em;
   font-weight: 200;
-  text-align: center;
-  width: 100%;
 }
 
 .home-search-wrapper {
-  margin: 0 auto;
-  width: 42em;
+  width: 100%;
 }
 
 .events-wrapper {

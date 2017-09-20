@@ -3,11 +3,10 @@
 	font-size: 24px;
 	height: 60px;
 	padding: 10px 20px 15px 20px;
-    border-radius: 100px;    
+    border-radius: 8px;    
     border: 1px solid #efefef;
 	box-shadow: 0 6px 15px rgba(36,37,38,0.08);
 	-webkit-box-shadow: 0 5px 5px 0 #eaeaea;
-	text-align: center;
 }
 
 .Search .ui.input input:-moz-placeholder {

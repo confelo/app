@@ -90,14 +90,19 @@ class App extends Component {
           </Grid>
         </div>
         <div className="home-intro">
-          <Grid container stackable columns={1}>
-            <h1>Find the best events in tech</h1>
-            <div className="home-search-wrapper">
-              <Search
-                isFluid={true}
-                size="huge"
-                placeholder="search by name, location, topic, speaker..."/>
-            </div>
+          <Grid container stackable columns={2}>
+            <Grid.Column>
+              <h1>Find the best events in tech</h1>
+              <p>Don't miss out on great tech conferences</p>
+            </Grid.Column>
+            <Grid.Column>
+              <div className="home-search-wrapper">
+                <Search
+                  isFluid={true}
+                  size="huge"
+                  placeholder="search by name, location, topic, speaker..."/>
+              </div>
+            </Grid.Column>
           </Grid>
         </div>
         <div className="events-wrapper">
