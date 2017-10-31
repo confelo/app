@@ -26,11 +26,10 @@
 }
 
 .App-logo {
-  color: #616dbc;
+  color: #5b6e80;
   display: inline-block;
-  font-size: 22px;
-  font-weight: 500;
-  height: 100%;
+  font-size: 2.2em;
+  font-weight: 200;
   line-height: 22px;
   margin-top: 30px;
 }
@@ -50,13 +49,14 @@
 }
 
 .home-intro {
-  padding: 50px 0 75px 0;
+  background: #5a6e80;
+  padding: 50px 0 50px 0;  
 }
 
 .home-intro h1 {
-  color: #545454;
+  color: #fff;
   font-size: 2em;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .home-search-wrapper {
@@ -64,10 +64,11 @@
 }
 
 .events-wrapper {
+  margin-top: 20px;
 }
 
 .view-more {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .view-more .-action {
@@ -76,8 +77,8 @@
 }
 
 .view-more .-action .button {
-  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
-  border-radius: 32px;
+  background: #5a6e80;
+  border-radius: 0;
   box-shadow: 0 6px 15px rgba(36,37,38,0.08);
   -webkit-box-shadow: 0 5px 5px 0 #eaeaea;  
   color: #fff;

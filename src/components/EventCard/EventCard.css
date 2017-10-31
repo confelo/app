@@ -1,23 +1,23 @@
 .EventCard.ui.card {    
-    border-radius: 8px;    
-    border: 1px solid #efefef;
-    box-shadow: 0 6px 15px rgba(36,37,38,0.08);
-    -webkit-box-shadow: 0 5px 5px 0 #eaeaea;
-    height: 300px;
+    border-radius: 0;
+    border: 1px solid #e6e6e6;
+    box-shadow: none;
+    height: 320px;
     margin: 0 0 10px 0;
-    opacity: 0.8;
+    opacity: 0.95;
     padding-top: 15px;
     width: 100%;
 }
 
 .EventCard.ui.card:hover {
-    border: 1px solid #e4e4e4;
+    border: 1px solid #e6e6e6;
     box-shadow: 0 6px 15px rgba(36,37,38,0.08);
     -webkit-box-shadow: 0 5px 5px 0 #eaeaea;
     opacity: 1;
 }
 
 .EventCard.ui.card>.content>.header {
+    color: #5a6e80;
     font-size: 2.6em;
     font-weight: 300;
     height: 185px;
@@ -27,14 +27,14 @@
 }
 
 .EventCard.ui.card>.extra {
-    font-size: 12px;
+    border-radius: 0 !important;
+    font-size: 14px;
 }
 
 .EventCard.ui.card .event_topic {
     background-color: #a2a2a2;
-    border-radius: 2px;
     color: #fff;
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 0.75px;
     margin-right: 2px;
     padding: 4px 7px;
@@ -43,7 +43,7 @@
 
 @media only screen and (max-width: 767px) {
     .EventCard.ui.card {
-        height: 220px;
+        height: 250px;
     }
 
     .EventCard.ui.card>.content>.header {

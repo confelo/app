@@ -17,12 +17,20 @@ const colorPool = [
 ];
 
 const EventCard = ({detail, onClick}) => {
-    const color = colorPool[Math.floor(Math.random()*colorPool.length)];
+    const color = colorPool[Math.floor(Math.random() * colorPool.length)];
 
     return (
-        <Card className="EventCard" onClick={onClick}>
+        <Card
+            className="EventCard"
+            onClick={onClick}
+            style={{
+            border: '1px solid ' + color,
+            // borderBottom: '7px solid ' + color
+        }}>
             <Card.Content>
-                <Card.Header style={{color: color}}>{detail.name.substring(0, 20)}</Card.Header>
+                <Card.Header>{detail
+                        .name
+                        .substring(0, 20)}</Card.Header>
                 {/* <Card.Description>{detail.description_short}</Card.Description> */}
                 <span className="event_topic">React</span>
                 <span className="event_topic">ML</span>
@@ -30,8 +38,8 @@ const EventCard = ({detail, onClick}) => {
                 <span className="event_topic">DDD</span>
             </Card.Content>
             <Card.Content extra>
-                {detail.place}, {detail.country}
-                : 25.09.2017
+                <div>{detail.place}, {detail.country}</div>
+                <div>25.09.2017</div>
             </Card.Content>
         </Card>
     );

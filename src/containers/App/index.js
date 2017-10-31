@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import {Button, Grid} from 'semantic-ui-react';
 
-import Search from '../../components/Search';
+// import Search from '../../components/Search';
 import EventList from '../../components/EventList';
 import EventDetail from '../../components/EventDetail';
 import './App.css';
 // import logo from '../../assets/logo.svg';
-import background from '../../assets/intro_bg.jpg';
+// import background from '../../assets/intro_bg.jpg';
 
 let someEvents = [
   {
@@ -33,6 +33,9 @@ let someEvents = [
 ];
 
 someEvents = someEvents
+  .concat(someEvents)
+  .concat(someEvents)
+  .concat(someEvents)
   .concat(someEvents)
   .concat(someEvents);
 
@@ -73,7 +76,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div
+        {/* <div
           className="App-header-wrapper"
           style={{
           background: background
@@ -88,21 +91,10 @@ class App extends Component {
               </div>
             </Grid.Column>
           </Grid>
-        </div>
+        </div> */}
         <div className="home-intro">
-          <Grid container stackable columns={2}>
-            <Grid.Column>
-              <h1>Find the best events in tech</h1>
-              <p>Don't miss out on great tech conferences</p>
-            </Grid.Column>
-            <Grid.Column>
-              <div className="home-search-wrapper">
-                <Search
-                  isFluid={true}
-                  size="huge"
-                  placeholder="search by name, location, topic, speaker..."/>
-              </div>
-            </Grid.Column>
+          <Grid container>
+            <h1>confelo: find the best events in tech</h1>
           </Grid>
         </div>
         <div className="events-wrapper">
@@ -110,7 +102,7 @@ class App extends Component {
         </div>
         <div className="view-more">
           <div className="-action">
-            <Button fluid>View all 195 events</Button>
+            <Button fluid>Load more tech events</Button>
           </div>
         </div>
 
