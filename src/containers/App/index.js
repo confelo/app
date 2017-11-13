@@ -49,64 +49,42 @@ class App extends Component {
       selectedEvent: {}
     }
 
-    this.handleEventClick = this
-      .handleEventClick
-      .bind(this);
+    // this.handleEventClick = this
+    //   .handleEventClick
+    //   .bind(this);
 
-    this.handleEventDetailClose = this
-      .handleEventDetailClose
-      .bind(this);
+    // this.handleEventDetailClose = this
+    //   .handleEventDetailClose
+    //   .bind(this);
   }
 
-  handleEventClick(e) {
-    console.log("EE : ", e);
-    this.setState({isSelectedEventVisible: true});
-  }
+  // handleEventClick(e) {
+  //   console.log("EE : ", e);
+  //   this.setState({isSelectedEventVisible: true});
+  // }
 
-  handleEventDetailClose() {
-    this.setState({isSelectedEventVisible: false});
-  }
+  // handleEventDetailClose() {
+  //   this.setState({isSelectedEventVisible: false});
+  // }
 
-  renderEventDetail() {
-    if (this.state.isSelectedEventVisible) {
-      return (<EventDetail onClose={this.handleEventDetailClose}/>);
-    }
-  }
+  // renderEventDetail() {
+  //   if (this.state.isSelectedEventVisible) {
+  //     return (<EventDetail onClose={this.handleEventDetailClose}/>);
+  //   }
+  // }
 
   render() {
     return (
       <div className="App">
-        {/* <div
-          className="App-header-wrapper"
-          style={{
-          background: background
-        }}>
-          <Grid container stackable columns={1}>
-            <Grid.Column>
-              <div className="App-header">
-                <div className="App-logo">confelo</div>
-                <div className="-action">
-                  <span>Add event</span>
-                </div>
-              </div>
-            </Grid.Column>
-          </Grid>
-        </div> */}
-        <div className="home-intro">
+        <div className="AppTitle">
           <Grid container>
             <h1>confelo</h1>
-            <h2>discover the best events in tech</h2>
+            <h2>discover best events in tech</h2>
           </Grid>
         </div>
-        <div className="events-wrapper">
-          <EventList events={someEvents} onEventClicked={this.handleEventClick}/> {this.renderEventDetail()}
+        <div className="Events">
+          <EventList events={someEvents}/>
         </div>
-        {/* <div className="view-more">
-          <div className="-action">
-            <Button fluid>Load more tech events</Button>
-          </div>
-        </div> */}
-
         <footer>Stay informed</footer>
       </div>
     );

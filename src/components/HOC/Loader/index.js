@@ -7,10 +7,9 @@ const Loader = (propName) => (WrappedComponent) => {
         }
 
         render() {
-            console.log(this.props[propName])
             return this.isSet(this.props[propName])
                 ? <WrappedComponent {...this.props}/>
-                : <span>Loadauje...</span>
+                : <span>Loading...</span>
         }
     }
 };

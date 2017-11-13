@@ -48,30 +48,26 @@
   color: #000;
 }
 
-.home-intro .ui.container.grid {
+.AppTitle .ui.container.grid {
   padding-top: 10px;
   margin: 0;
 }
 
-.home-intro h1 {
+.AppTitle h1 {
   color: #000;
   font-size: 2em;
   width: 100%;
   margin-bottom: 0;
 }
 
-.home-intro h2 {
+.AppTitle h2 {
   color: #656565;
   font-size: 1.3em;
   font-weight: 300;
   margin: 0;
 }
 
-.home-search-wrapper {
-  width: 100%;
-}
-
-.events-wrapper {
+.Events {
   margin-top: 20px;
 }
 
