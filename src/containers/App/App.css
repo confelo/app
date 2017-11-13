@@ -1,6 +1,6 @@
 .App {
   width: 100%;
-  background-color: #fff;
+  background-color: #f7f7f7;
 }
 
 .App-header-wrapper {
@@ -48,15 +48,23 @@
   color: #000;
 }
 
-.home-intro {
-  background: #5a6e80;
-  padding: 50px 0 50px 0;  
+.home-intro .ui.container.grid {
+  padding-top: 10px;
+  margin: 0;
 }
 
 .home-intro h1 {
-  color: #fff;
+  color: #000;
   font-size: 2em;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.home-intro h2 {
+  color: #656565;
+  font-size: 1.3em;
   font-weight: 300;
+  margin: 0;
 }
 
 .home-search-wrapper {
@@ -99,23 +107,4 @@ footer {
   height: 10em;
   text-align: center;
   padding-top: 2em;
-}
-
-@media only screen and (max-width: 767px) {
-  .App-logo {
-    margin-top: 20px;
-  }
-
-  .App-header .-action {
-    margin-top: 20px;
-  }
-
-  .home-intro h1 {
-    width: 80%;
-    margin: 0 auto 25px auto;    
-  }
-
-  .view-more {
-    padding: 30px 0;
-  }
 }

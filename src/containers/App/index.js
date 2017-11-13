@@ -5,30 +5,30 @@ import {Button, Grid} from 'semantic-ui-react';
 import EventList from '../../components/EventList';
 import EventDetail from '../../components/EventDetail';
 import './App.css';
-// import logo from '../../assets/logo.svg';
-// import background from '../../assets/intro_bg.jpg';
+// import logo from '../../assets/logo.svg'; import background from
+// '../../assets/intro_bg.jpg';
 
 let someEvents = [
   {
     name: 'The Next Web Conf.',
     description_short: 'Europes leading tech festival',
     place: 'Amsterdam',
-    country: 'Netherlands'
+    country: 'NL'
   }, {
     name: 'React Conf',
     description_short: 'Largest European conference dedicated to React.js',
     place: 'Paris',
-    country: 'France'
+    country: 'FR'
   }, {
     name: 'We Are Developers',
     description_short: 'Europes leading tech festival',
     place: 'Wien',
-    country: 'Austria'
+    country: 'AT'
   }, {
     name: 'We Are Developers Here we are',
     description_short: 'Europes leading tech festival',
     place: 'Wien',
-    country: 'Austria'
+    country: 'AT'
   }
 ];
 
@@ -94,17 +94,18 @@ class App extends Component {
         </div> */}
         <div className="home-intro">
           <Grid container>
-            <h1>confelo: find the best events in tech</h1>
+            <h1>confelo</h1>
+            <h2>discover the best events in tech</h2>
           </Grid>
         </div>
         <div className="events-wrapper">
           <EventList events={someEvents} onEventClicked={this.handleEventClick}/> {this.renderEventDetail()}
         </div>
-        <div className="view-more">
+        {/* <div className="view-more">
           <div className="-action">
             <Button fluid>Load more tech events</Button>
           </div>
-        </div>
+        </div> */}
 
         <footer>Stay informed</footer>
       </div>

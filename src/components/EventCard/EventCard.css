@@ -1,51 +1,70 @@
-.EventCard.ui.card {    
+.EventCard.ui.card {
     border-radius: 0;
-    border: 1px solid #e6e6e6;
     box-shadow: none;
-    height: 320px;
+    height: 215px;
     margin: 0 0 10px 0;
     opacity: 0.95;
     padding-top: 15px;
     width: 100%;
+    border: 1px solid transparent;
 }
 
 .EventCard.ui.card:hover {
-    border: 1px solid #e6e6e6;
-    box-shadow: 0 6px 15px rgba(36,37,38,0.08);
-    -webkit-box-shadow: 0 5px 5px 0 #eaeaea;
-    opacity: 1;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    cursor: pointer;
+    -webkit-transition: background-color 1.7s ease-out;
+    -moz-transition: background-color 1.7s ease-out;
+    -o-transition: background-color 1.7s ease-out;
+    transition: background-color 1.7s ease-out;
+    transform: none;
 }
 
 .EventCard.ui.card>.content>.header {
-    color: #5a6e80;
+    color: #fff;
     font-size: 2.6em;
     font-weight: 300;
-    height: 185px;
     line-height: 1.1em;
     margin-bottom: 15px;
-    width: 75%;
+    width: 90%;
 }
+
+.EventCard.ui.card>.content>.description {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    width: 80%;
+}
+
 
 .EventCard.ui.card>.extra {
     border-radius: 0 !important;
-    font-size: 14px;
+    color: #fff;
+    font-size: 16px;
 }
 
-.EventCard.ui.card .event_topic {
-    background-color: #a2a2a2;
+.EventCard.ui.card .EventCard_topics {
+    display: inline-block;
+}
+
+.EventCard.ui.card .EventCard_topics .topic {
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0.75px;
     margin-right: 2px;
     padding: 4px 7px;
     text-transform: uppercase;
 }
 
+.EventCard.ui.card .EventCard_timeplace {
+    display: inline-block;
+    float: right;
+}
+
 @media only screen and (max-width: 767px) {
     .EventCard.ui.card {
         height: 250px;
     }
-
     .EventCard.ui.card>.content>.header {
         height: 110px;
     }

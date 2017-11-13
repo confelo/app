@@ -8,7 +8,7 @@ import EventCard from '../EventCard';
 const EventList = ({events, onEventClicked}) => {
     return (
         <div className="EventList">
-            <Grid container stackable columns={4}>
+            <Grid container stackable columns={1}>
                 {events.map((e, index) => {
                     return (
                         <Grid.Column key={index}><EventCard detail={e} onClick={() => onEventClicked(e)}/></Grid.Column>

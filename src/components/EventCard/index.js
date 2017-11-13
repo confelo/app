@@ -24,22 +24,33 @@ const EventCard = ({detail, onClick}) => {
             className="EventCard"
             onClick={onClick}
             style={{
-            border: '1px solid ' + color,
-            // borderBottom: '7px solid ' + color
+            backgroundColor: '#FFF'
         }}>
             <Card.Content>
-                <Card.Header>{detail
+                <Card.Header style={{
+                    color
+                }}>{detail
                         .name
-                        .substring(0, 20)}</Card.Header>
-                {/* <Card.Description>{detail.description_short}</Card.Description> */}
-                <span className="event_topic">React</span>
-                <span className="event_topic">ML</span>
-                <span className="event_topic">AI</span>
-                <span className="event_topic">DDD</span>
+                        .substring(0, 80)}</Card.Header>
+                <Card.Description style={{
+                    color
+                }}>{detail.description_short}</Card.Description>
+
             </Card.Content>
-            <Card.Content extra>
-                <div>{detail.place}, {detail.country}</div>
-                <div>25.09.2017</div>
+            <Card.Content
+                extra
+                style={{
+                backgroundColor: color
+            }}>
+                <div className="EventCard_topics">
+                    <span className="topic">React</span>
+                    <span className="topic">ML</span>
+                    <span className="topic">AI</span>
+                    <span className="topic">DDD</span>
+                </div>
+                <div className="EventCard_timeplace">
+                    {detail.place}, {detail.country}, 25.09.2017
+                </div>
             </Card.Content>
         </Card>
     );
